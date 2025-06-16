@@ -91,8 +91,8 @@ class RealTimePriceViewModelTests: XCTestCase {
 
         wait(for: [initialValueExpectation, updatedValueExpectation], timeout: 2.5)
 
-        XCTAssertEqual(receivedValues.count, 2, "Should have received exactly two values (initial + first update)")
-        XCTAssertNotEqual(receivedValues[0], receivedValues[1], "Second value should be different from the first (initial value)")
+        XCTAssertEqual(receivedValues.count, 2, "Should have received exactly two values -> initial + first update")
+        XCTAssertNotEqual(receivedValues[0], receivedValues[1], "Second value should be different from the first only intial value)")
         XCTAssertTrue(receivedValues[1].starts(with: "$"), "Updated value should be currency formatted")
     }
 
