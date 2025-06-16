@@ -9,3 +9,11 @@ struct CommonConstants {
     
     static let empty: String = ""
 }
+
+struct UIConstants {
+    
+    static let minimumWidth: Double = 1
+    static let maximumWidth: Double = 100
+    static let padding: Double = 10
+    static let radius: Double = 8
+}

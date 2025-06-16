@@ -25,7 +25,7 @@ class RealTimePriceView: UIView {
 
     private func setupView() {
         backgroundColor = UIColor(red: 255/255, green: 247/255, blue: 200/255, alpha: 1.0)
-        layer.cornerRadius = 8
+        layer.cornerRadius = UIConstants.radius
         clipsToBounds = true
 
         valueLabel.font = UIFont.systemFont(ofSize: FontSize.title, weight: .semibold)
