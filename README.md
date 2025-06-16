@@ -39,4 +39,5 @@ iOS application that displays a list of trading instruments along with a real-ti
 ```
   swift: 6.1
   xcode: 16.3
+  ios: >15.6
 ```
