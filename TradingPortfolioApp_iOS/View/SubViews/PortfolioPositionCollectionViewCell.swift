@@ -79,4 +79,3 @@ class PortfolioPositionCell: UICollectionViewCell {
         valueLabel.text = formatter.string(from: NSNumber(value: position.marketValue))
     }
 }
-
