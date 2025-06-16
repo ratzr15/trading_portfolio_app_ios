@@ -69,7 +69,7 @@ internal final class PortfolioViewModel: PortfolioViewModelContractor {
     }
     
     var sectionsCount: Int {
-        return dataSource.count
+        return 1
     }
     
     func section(at index: Int) -> Section<Void, PortfolioCollectionView.Rows> {

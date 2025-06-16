@@ -5,6 +5,7 @@
 //  Created by Rathish on 16/06/2025.
 //
 
+//@visibleForTesting_Swift
 extension PortfolioResponse {
     static var dummy: PortfolioResponse {
         PortfolioResponse(

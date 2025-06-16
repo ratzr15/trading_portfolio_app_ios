@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		AE81729B2E001AC40002B64C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AE81729A2E001AC40002B64C /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		AE81724C2DFF4C490002B64C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,9 +28,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AE8172352DFF4C480002B64C /* TradingPortfolioApp_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TradingPortfolioApp_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE81724B2DFF4C490002B64C /* TradingPortfolioApp_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TradingPortfolioApp_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE8172552DFF4C490002B64C /* TradingPortfolioApp_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TradingPortfolioApp_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE8172352DFF4C480002B64C /* TradingPortfolioApp_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = TradingPortfolioApp_iOS.app; path = "/Users/rathishkannan/Documents/Data/GitHub/baraka/TradingPortfolioApp_iOS/build/Debug-iphoneos/TradingPortfolioApp_iOS.app"; sourceTree = "<absolute>"; };
+		AE81724B2DFF4C490002B64C /* TradingPortfolioApp_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TradingPortfolioApp_iOSTests.xctest; path = "/Users/rathishkannan/Documents/Data/GitHub/baraka/TradingPortfolioApp_iOS/build/Debug-iphoneos/TradingPortfolioApp_iOS.app/PlugIns/TradingPortfolioApp_iOSTests.xctest"; sourceTree = "<absolute>"; };
+		AE8172552DFF4C490002B64C /* TradingPortfolioApp_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TradingPortfolioApp_iOSUITests.xctest; path = "/Users/rathishkannan/Documents/Data/GitHub/baraka/TradingPortfolioApp_iOS/build/Debug-iphoneos/TradingPortfolioApp_iOSUITests-Runner.app/PlugIns/TradingPortfolioApp_iOSUITests.xctest"; sourceTree = "<absolute>"; };
+		AE81729A2E001AC40002B64C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -91,18 +96,8 @@
 				AE8172372DFF4C480002B64C /* TradingPortfolioApp_iOS */,
 				AE81724E2DFF4C490002B64C /* TradingPortfolioApp_iOSTests */,
 				AE8172582DFF4C490002B64C /* TradingPortfolioApp_iOSUITests */,
-				AE8172362DFF4C480002B64C /* Products */,
+				AE81729A2E001AC40002B64C /* README.md */,
 			);
-			sourceTree = "<group>";
-		};
-		AE8172362DFF4C480002B64C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				AE8172352DFF4C480002B64C /* TradingPortfolioApp_iOS.app */,
-				AE81724B2DFF4C490002B64C /* TradingPortfolioApp_iOSTests.xctest */,
-				AE8172552DFF4C490002B64C /* TradingPortfolioApp_iOSUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,7 +204,7 @@
 			mainGroup = AE81722C2DFF4C480002B64C;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = AE8172362DFF4C480002B64C /* Products */;
+			productRefGroup = AE81722C2DFF4C480002B64C;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -225,6 +220,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE81729B2E001AC40002B64C /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

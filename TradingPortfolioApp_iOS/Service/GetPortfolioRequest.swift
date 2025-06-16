@@ -12,5 +12,4 @@ struct GetPortfolioRequest: NetworkRequest {
     var requestPath: String {
         NetworkConstants.path
     }
-    
 }

@@ -27,7 +27,7 @@ iOS application that displays a list of trading instruments along with a real-ti
        |--Networking
        		|--networkclient.swift
 				
---test
+--tests
    |--unit
    |--ui
         
