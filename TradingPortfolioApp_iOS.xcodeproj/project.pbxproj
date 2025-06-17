@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		AE81729B2E001AC40002B64C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AE81729A2E001AC40002B64C /* README.md */; };
 		AE8172A42E0030C90002B64C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = AE8172A32E0030C90002B64C /* SnapKit */; };
+		AE8172B12E0058460002B64C /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = AE8172B02E0058460002B64C /* RxCocoa */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,10 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AE1B376B2E00712B00DC79FA /* TradingPortfolioApp_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TradingPortfolioApp_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE1B376C2E00712B00DC79FA /* TradingPortfolioApp_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TradingPortfolioApp_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE1B376D2E00712B00DC79FA /* TradingPortfolioApp_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TradingPortfolioApp_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE81729A2E001AC40002B64C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		AE81729F2E002F890002B64C /* TradingPortfolioApp_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = TradingPortfolioApp_iOS.app; path = "/Users/rathishkannan/Documents/Data/GitHub/baraka/TradingPortfolioApp_iOS/build/Debug-iphoneos/TradingPortfolioApp_iOS.app"; sourceTree = "<absolute>"; };
-		AE8172A02E002F890002B64C /* TradingPortfolioApp_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TradingPortfolioApp_iOSTests.xctest; path = "/Users/rathishkannan/Documents/Data/GitHub/baraka/TradingPortfolioApp_iOS/build/Debug-iphoneos/TradingPortfolioApp_iOS.app/PlugIns/TradingPortfolioApp_iOSTests.xctest"; sourceTree = "<absolute>"; };
-		AE8172A12E002F890002B64C /* TradingPortfolioApp_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TradingPortfolioApp_iOSUITests.xctest; path = "/Users/rathishkannan/Documents/Data/GitHub/baraka/TradingPortfolioApp_iOS/build/Debug-iphoneos/TradingPortfolioApp_iOSUITests-Runner.app/PlugIns/TradingPortfolioApp_iOSUITests.xctest"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -71,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE8172B12E0058460002B64C /* RxCocoa in Frameworks */,
 				AE8172A42E0030C90002B64C /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,6 +101,9 @@
 				AE81724E2DFF4C490002B64C /* TradingPortfolioApp_iOSTests */,
 				AE8172582DFF4C490002B64C /* TradingPortfolioApp_iOSUITests */,
 				AE81729A2E001AC40002B64C /* README.md */,
+				AE1B376B2E00712B00DC79FA /* TradingPortfolioApp_iOS.app */,
+				AE1B376C2E00712B00DC79FA /* TradingPortfolioApp_iOSTests.xctest */,
+				AE1B376D2E00712B00DC79FA /* TradingPortfolioApp_iOSUITests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,9 +128,10 @@
 			name = TradingPortfolioApp_iOS;
 			packageProductDependencies = (
 				AE8172A32E0030C90002B64C /* SnapKit */,
+				AE8172B02E0058460002B64C /* RxCocoa */,
 			);
 			productName = TradingPortfolioApp_iOS;
-			productReference = AE81729F2E002F890002B64C /* TradingPortfolioApp_iOS.app */;
+			productReference = AE1B376B2E00712B00DC79FA /* TradingPortfolioApp_iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 		AE81724A2DFF4C490002B64C /* TradingPortfolioApp_iOSTests */ = {
@@ -148,7 +154,7 @@
 			packageProductDependencies = (
 			);
 			productName = TradingPortfolioApp_iOSTests;
-			productReference = AE8172A02E002F890002B64C /* TradingPortfolioApp_iOSTests.xctest */;
+			productReference = AE1B376C2E00712B00DC79FA /* TradingPortfolioApp_iOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		AE8172542DFF4C490002B64C /* TradingPortfolioApp_iOSUITests */ = {
@@ -171,7 +177,7 @@
 			packageProductDependencies = (
 			);
 			productName = TradingPortfolioApp_iOSUITests;
-			productReference = AE8172A12E002F890002B64C /* TradingPortfolioApp_iOSUITests.xctest */;
+			productReference = AE1B376D2E00712B00DC79FA /* TradingPortfolioApp_iOSUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -208,6 +214,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				AE8172A22E0030C80002B64C /* XCRemoteSwiftPackageReference "SnapKit" */,
+				AE8172AF2E0058460002B64C /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = AE81722C2DFF4C480002B64C;
@@ -299,6 +306,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -327,6 +335,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -583,6 +592,14 @@
 				minimumVersion = 5.7.1;
 			};
 		};
+		AE8172AF2E0058460002B64C /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.9.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -590,6 +607,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = AE8172A22E0030C80002B64C /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		AE8172B02E0058460002B64C /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AE8172AF2E0058460002B64C /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

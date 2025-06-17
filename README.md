@@ -7,10 +7,11 @@ iOS application that displays a list of trading instruments along with a real-ti
 - App uses MVVM architecture 
 - Unit tested domain and data layer.
 - App uses snapKit for programmatic UI creation.
+- App uses Rx for reactive programming
 
 ### Highlights
 
-- Include coverage info
+- Business layer - view models are 100% tested
 - Modularisation of different layers - Networking & Design system
 
 
@@ -38,4 +39,5 @@ iOS application that displays a list of trading instruments along with a real-ti
 ```
   swift: 6.1
   xcode: 16.3
+  ios: >15.6
 ```

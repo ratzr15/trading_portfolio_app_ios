@@ -77,17 +77,21 @@ class PortfolioViewController: UIViewController {
     }
 
     private func createLayout() -> UICollectionViewLayout {
-        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
-                                              heightDimension: .estimated(100))
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(UIConstants.minimumWidth),
+                                              heightDimension: .estimated(UIConstants.maximumWidth))
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
 
-        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
-                                               heightDimension: .estimated(100))
+        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(UIConstants.minimumWidth),
+                                               heightDimension: .estimated(UIConstants.maximumWidth))
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
 
         let section = NSCollectionLayoutSection(group: group)
-        section.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0)
-        section.interGroupSpacing = 8
+        
+        section.contentInsets = NSDirectionalEdgeInsets(top: UIConstants.padding,
+                                                        leading: 0,
+                                                        bottom: UIConstants.padding,
+                                                        trailing: 0)
+        section.interGroupSpacing = Spacing.xs
 
         return UICollectionViewCompositionalLayout(section: section)
     }
@@ -111,19 +115,19 @@ extension PortfolioViewController: UICollectionViewDataSource {
         case .loading:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: LoadingCell.reuseIdentifier, for: indexPath) as! LoadingCell
             cell.backgroundColor = .systemBackground
-            cell.layer.cornerRadius = 10
+            cell.layer.cornerRadius = UIConstants.radius
             return cell
         case .error(let message):
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ErrorCell.reuseIdentifier, for: indexPath) as! ErrorCell
             cell.configure(with: message)
             cell.backgroundColor = .systemBackground
-            cell.layer.cornerRadius = 10
+            cell.layer.cornerRadius = UIConstants.radius
             return cell
         case .portfolio(let position):
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PortfolioPositionCell.reuseIdentifier, for: indexPath) as! PortfolioPositionCell
             cell.configure(with: position)
             cell.backgroundColor = .systemBackground
-            cell.layer.cornerRadius = 10
+            cell.layer.cornerRadius = UIConstants.radius
             cell.layer.masksToBounds = true
             return cell
         }
@@ -136,7 +140,7 @@ extension PortfolioViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let row = viewModel.row(at: indexPath)
         if case .portfolio(let position) = row {
-            print("Tapped on \(position.instrument.ticker)")
+            //TODO: Implement navigation
         }
     }
 }
